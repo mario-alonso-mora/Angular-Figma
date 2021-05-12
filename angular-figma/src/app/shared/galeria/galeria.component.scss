@@ -1,0 +1,54 @@
+.image{
+    display: flex;
+    width: 200px;
+    height: 177px;
+    line-height:  255px;
+    margin-top:40px;
+}
+
+
+
+.products__gallerybtn{
+  display: flex;
+}
+
+
+.products__gallerybtnstars{
+  unicode-bidi: bidi-override;
+  color: #ccc;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+
+.rating__1{
+      color: #FB8200;
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+      display: block;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+  }
+
+.rating__2{
+      padding: 0;
+      display: block;
+      z-index: 0;
+  }
+
+.products__gallerybtn-rating{
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 22px;
+  display: flex;
+
+  letter-spacing: 0,1px;
+  color: #5E6366;;
+}
+
+

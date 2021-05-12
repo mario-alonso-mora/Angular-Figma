@@ -1,0 +1,33 @@
+<section class="section g-gestion">
+  <h2 class="g-gestion__head">Creación/edición de productos</h2>
+  <div class="g-gestion__container">
+    <form class="g-gestion__container__form" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+      <label for="name">Nombre del producto:</label>
+      <input type="text" id="name" formControlName="name" placeholder="Por ej: Tiesto para planta"
+        [(ngModel)]="product.name" required>
+
+      <label for="price">Precio:</label>
+      <input type="number" id="price" formControlName="price" placeholder="Por ej: 9.50" [(ngModel)]="product.price"
+        required>
+
+      <label for="description">Descripción:</label>
+      <input type="text" id="description" formControlName="description" placeholder="Por ej: Lo más vendido este mes"
+        [(ngModel)]="product.description" required>
+
+      <label for="image">Ruta de la imagen:</label>
+      <input type="text" id="image" formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg"
+        [(ngModel)]="product.image">
+
+      <label for="stars">Opiniones:</label>
+      <input type="number" id="stars" min="0" max="5" formControlName="stars" placeholder="Por ej: 4.28"
+        [(ngModel)]="product.stars" required>
+
+      <button type="submit">Guardar</button>
+    </form>
+    <hr>
+    <div class="g-gestion__container__product">
+      <h3>Preview del producto:</h3>
+      <app-galeria class="g-gestion__container__product__preview" [list]="product"></app-galeria>
+    </div>
+  </div>
+</section>

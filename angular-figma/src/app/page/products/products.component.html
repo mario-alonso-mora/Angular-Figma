@@ -1,0 +1,19 @@
+<div class="p-container">
+  <div class="p-products">
+    <h2> Listado de Productos ({{ (products | filter:filter).length }}) </h2>
+
+    <div class="p-products1">
+      <input class="p-products2" id="name" name="name" [(ngModel)]="filter" type="text" placeholder="Buscador" />
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-6 col-sm-4 col-lg-3 " *ngFor="let product of (products | filter:filter)">
+
+
+          <app-galeria [list]="product"></app-galeria>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

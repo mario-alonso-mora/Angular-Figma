@@ -1,0 +1,27 @@
+.a-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+
+    &icon {
+        width: 40px;
+        height: 40px;
+        font-family: "Red Hat Display", sans-serif;
+        text-align: center;
+
+        p {
+            margin: 0;
+            font-size: 32px;
+            background: linear-gradient(to right,#2979FF, #4C589E);
+            border-radius: 6px;
+            color:white;
+            font-weight: bold;
+        }
+    }
+
+    &font {
+        font-family: "Red Hat Display", sans-serif;
+        color: #0c2146;
+    }
+}
